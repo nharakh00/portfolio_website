@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #383733;
+    height: 25%;
+    width: 100%;
+}
+
+.logo h1 {
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a {
+    background-color: #383733;
+    color: white;
+    padding: 0.625rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#home {
+    background-color: #878276;
+    color: black;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #878276;
+    color: black;
+    border-radius: 10px;
+}
+
+/*End Of Header section*/
+
+
+
+.hero_image {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url('images/coffee.jpg');
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 31.25rem;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_image h1 {
+    font-family: 'Courier New', monospace;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.btn button {
+    background-color:  #383733; 
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 15rem;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #878276;
+    color: black;
+}
+
+.cards {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #383733;
+    color: white;
+    width:100%;
+}
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    color: white;
+    width: 31.25rem;
+
+}
+
+.cards img {
+    border-bottom: solid; 
+    color: #C0C0C0;
+    width: 31.25rem;
+    height: 19.375rem;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row; 
+    background-color: #383733;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 3.75rem;
+}
+
+@media (max-width: 500px) {
+    header {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #383733;
+        height: 25%;
+        width: 100%;
+    }
+
+    .cards {
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #383733;
+        color: white;
+        width:100%;
+    }
+
+}
