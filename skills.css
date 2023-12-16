@@ -33,16 +33,68 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    background-color: #878276;
+    color: black;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
 #skills {
     background-color: #878276;
     color: black;
     border-radius: 10px;
 }
 
-nav a:hover {
-    background-color: #878276;
-    color: black;
-    border-radius: 10px;
+main {
+    background-color: black;
+    color: white;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    color: white;
+}
+
+.skill {
+    border: solid;
+    color: white;
+}
+
+.skill img {
+    width: 10rem;
+    height: 8rem;
+}
+
+.data_portfol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.data_portfol a {
+    text-decoration: none;
+    color: white;
+}
+
+.web {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+
+
+.web img {
+    width: 10rem;
+    height: 8rem;
 }
 
 
@@ -56,7 +108,7 @@ footer {
     height: 3.75rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 825px) {
     header {
         display:flex;
         flex-direction: column;
